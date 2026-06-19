@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Tarefas AJAX</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>📋 Tarefas AJAX</h1>
+        <span style="color: #889; font-size: 0.85rem"
+          >Aula 38 — PUT, loading, debounce</span
+        >
+      </div>
+    </header>
+    <div class="container">
+      <div class="stats">
+        <div class="stat">
+          <div class="num" id="total">0</div>
+          <div class="rot">Tarefas</div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Adicionar Tarefa</h2>
+        <form id="form-tarefa" onsubmit="criarTarefa(event)">
+          <div class="form-row">
+            <input
+              type="text"
+              id="inp-titulo"
+              placeholder="O que precisa fazer?"
+              required
+            /><button type="submit" class="btn">Adicionar</button>
+          </div>
+        </form>
+      </div>
+      <div class="busca">
+        <input
+          type="text"
+          oninput="buscarComDebounce(event)"
+          placeholder="🔍 Buscar tarefa..."
+        />
+      </div>
+      <div id="loading">⏳ Carregando...</div>
+      <div class="card">
+        <h2>Suas Tarefas</h2>
+        <div id="lista-tarefas"></div>
+      </div>
+    </div>
+    <script src="/js/tarefas.js"></script>
+  </body>
+</html>

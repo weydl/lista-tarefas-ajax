@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Estudar TypeScript",
+    "concluida": true,
+    "criadaEm": "2026-06-01"
+  },
+  {
+    "id": 2,
+    "titulo": "Fazer exercício da Aula 37",
+    "concluida": false,
+    "criadaEm": "2026-06-02"
+  },
+  {
+    "id": 3,
+    "titulo": "Revisar fetch API",
+    "concluida": false,
+    "criadaEm": "2026-06-03"
+  },
+  {
+    "id": 4,
+    "titulo": "Preparar projeto final",
+    "concluida": false,
+    "criadaEm": "2026-06-04"
+  }
+]
